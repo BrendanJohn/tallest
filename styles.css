@@ -13,7 +13,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 600px;
+    height: 500px;
     border-bottom: 1px solid #eee;
 }
 
@@ -62,7 +62,6 @@
 #millenium:hover {
     height: 209pt;
 }
-
 
 
 .height {
@@ -143,14 +142,17 @@ li {
 }
 li a {
     display: block;
-    color: white;
-    text-align: center;
     padding: 15px;
     text-decoration: none;
+    color: #fff;
+    transition-property: color, background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
 }
-li a:hover {
-    background-color: #1e1f21;
-}
+a:hover, a:focus {
+    color: #333;
+    background-color: #fff;
+    }
 .navbar {
     margin-bottom: 20px;
 }
