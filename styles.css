@@ -231,6 +231,18 @@
     margin-left: 7px;
     margin-top: 6px;
 }
+svg:hover #prudential { 
+  fill:darkseagreen;
+  transition-duration: 2s;
+}
+svg:hover #millenium { 
+  fill:darkseagreen;
+  transition-duration: 2s;
+}
+svg:hover #hancock { 
+  fill:darkseagreen;
+  transition-duration: 2s;
+}
 div {
     display: block;
 }
