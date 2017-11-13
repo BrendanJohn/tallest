@@ -2,12 +2,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /*landscape*/
+
 #wrapper {
-  position: relative;
-  display: block;
-  width: auto;
-  height: 500px;
-  bottom: 50px;
+    position: relative;
+    display: block;
+    width: auto;
+    height: 500px;
+    bottom: 50px;
 }
 #landscape {
     position: absolute;
@@ -16,7 +17,6 @@
     height: 500px;
     border-bottom: 1px solid #eee;
 }
-
 #landscape li {
     position: relative;
     float: left;
@@ -24,16 +24,10 @@
     height: 100%;
     margin-left: 80px;
 }
-
 .building {
     position: absolute;
     bottom: 100px;
-    height: 100px;
-    width: 100%;
-    -webkit-transition: height linear 1s; /* For Safari 3.1 to 6.0 */
-    transition: height linear 1s;
 }
-
 .name {
     position: absolute;
     bottom: 55px;
@@ -41,46 +35,211 @@
     width: 100%;
     text-align: center;
     font-size: 16px;
-    transform: translate(3px,3px);
+    transform: translate(3px, 3px);
 }
 /*buildings*/
+
 #hancock {
     background-color: lightblue;
-}
-#hancock:hover {
+    animation: growHancock 3s;
     height: 241pt;
+}
+@keyframes growHancock {
+    0% {
+        height: 100pt;
+        width: 95%;
+    }
+    10% {
+        height: 115pt;
+        width: 95%;
+    }
+    20% {
+        height: 130pt;
+        width: 95%;
+    }
+    30% {
+        height: 145pt;
+        width: 95%;
+    }
+    40% {
+        height: 150pt;
+        width: 95%;
+    }
+    50% {
+        height: 165pt;
+        width: 95%;
+    }
+    60% {
+        height: 180pt;
+        width: 95%;
+    }
+    70% {
+        height: 195pt;
+        width: 95%;
+    }
+    80% {
+        height: 210pt;
+        width: 96%;
+    }
+    90% {
+        height: 225pt;
+        width: 97%;
+    }
+    100% {
+        height: 241pt;
+        width: 100%;
+    }
 }
 #prudential {
     background-color: darkseagreen;
-}
-#prudential:hover {
+    animation: growPru 4s;
     height: 228pt;
+}
+@keyframes growPru {
+    0% {
+        height: 100pt;
+        width: 95%;
+    }
+    10% {
+        height: 115pt;
+        width: 95%;
+    }
+    20% {
+        height: 130pt;
+        width: 95%;
+    }
+    30% {
+        height: 145pt;
+        width: 95%;
+    }
+    40% {
+        height: 150pt;
+        width: 95%;
+    }
+    50% {
+        height: 165pt;
+        width: 96%;
+    }
+    60% {
+        height: 180pt;
+        width: 97%;
+    }
+    70% {
+        height: 195pt;
+        width: 98%;
+    }
+    80% {
+        height: 210pt;
+        width: 99%;
+    }
+    90% {
+        height: 225pt;
+        width: 100%;
+    }
+    100% {
+        height: 228pt;
+        width: 100%;
+    }
 }
 #millenium {
     background-color: lightskyblue;
-}
-#millenium:hover {
+    animation: growMillenium 2s;
     height: 209pt;
 }
-
-
-.height {
-    display: block;
-    font: 21px/30px 'AauxProBlackRegular',helvetica, sans-serif;
-    color: #507a8c;
-    transform: translate(15px,30px);
+@keyframes growMillenium {
+    0% {
+        height: 100pt;
+    }
+    10% {
+        height: 115pt;
+    }
+    20% {
+        height: 130pt
+    }
+    30% {
+        height: 145pt;
+    }
+    40% {
+        height: 150pt;
+    }
+    50% {
+        height: 165pt;
+    }
+    60% {
+        height: 180pt;
+    }
+    70% {
+        height: 195pt;
+    }
+    80% {
+        height: 209pt;
+        width: 98%;
+    }
+    90% {
+        height: 209pt;
+        width: 99%;
+    }
+    100% {
+        height: 209pt;
+        width: 100%;
+    }
 }
-
+.topLeft {
+    width: 30px;
+    height: 20px;
+    background: white;
+    display: block;
+    float: left;
+}
+.topRight {
+    width: 30px;
+    height: 20px;
+    background: white;
+    display: block;
+    float: right;
+}
+.window {
+    width: 14px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 6px;
+    animation: windows 5s;
+    background: cornflowerblue;
+}
+@keyframes windows {
+    0% {
+        background: 0;
+    }
+    20% {
+        background: 0;
+    }
+    75% {
+        background: cornflowerblue;
+        transform: rotate(180deg);
+    }
+    100% {
+        background: cornflowerblue;
+        transform: rotate(180deg);
+        transition-duration: 3s;
+    }
+}
+.windowBlank {
+    width: 14px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 6px;
+}
 div {
     display: block;
 }
-
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-
 .rounded {
     border-radius: 25px;
 }
@@ -92,7 +251,6 @@ article h3 {
     float: left;
     clear: both;
 }
-
 footer {
     position: fixed;
     right: 0;
@@ -102,8 +260,8 @@ footer {
     background-color: #efefef;
     text-align: center;
 }
-
 /*layouts*/
+
 .small-column {
     float: left;
     width: 30%;
@@ -128,8 +286,8 @@ footer {
     margin: auto;
     width: 50%;
 }
-
 /*nav*/
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -149,15 +307,16 @@ li a {
     transition-duration: 1s;
     transition-timing-function: ease-out;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #333;
     background-color: #fff;
-    }
+}
 .navbar {
     margin-bottom: 20px;
 }
-
 /*table*/
+
 table {
     display: block;
     clear: both;
