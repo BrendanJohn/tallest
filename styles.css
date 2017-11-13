@@ -103,48 +103,52 @@
     0% {
         height: 100pt;
         width: 95%;
+        filter: opacity(10%);
     }
     10% {
         height: 115pt;
         width: 95%;
+        filter: opacity(20%);
     }
     20% {
         height: 130pt;
         width: 95%;
+        filter: opacity(30%);
     }
     30% {
         height: 145pt;
         width: 95%;
+        filter: opacity(40%);
     }
     40% {
         height: 150pt;
         width: 95%;
-        filter: blur(1px);
+        filter: opacity(50%);
     }
     50% {
         height: 165pt;
         width: 96%;
-        filter: blur(2px);
+        filter: opacity(60%);
     }
     60% {
         height: 180pt;
         width: 97%;
-        filter: blur(3px);
+        filter: opacity(70%);
     }
     70% {
         height: 195pt;
         width: 98%;
-        filter: blur(3px);
+        filter: opacity(80%);
     }
     80% {
         height: 210pt;
         width: 99%;
-        filter: blur(2px);
+        filter: opacity(90%);
     }
     90% {
         height: 225pt;
         width: 100%;
-        filter: blur(1px);
+        filter: opacity(80%);
     }
     100% {
         height: 228pt;
@@ -159,23 +163,28 @@
 @keyframes growMillenium {
     0% {
         height: 100pt;
-        filter: blur(5px)
+        filter: blur(3px)
+        filter: opacity(30%);
     }
     10% {
         height: 115pt;
-        filter: blur(4px);
+        filter: blur(3px);
+        filter: opacity(40%);
     }
     20% {
         height: 130pt;
         filter: blur(3px);
+        filter: opacity(50%);
     }
     30% {
         height: 145pt;
         filter: blur(2px);
+        filter: opacity(60%);
     }
     40% {
         height: 150pt;
         filter: blur(1px);
+        filter: opacity(70%);
     }
     50% {
         height: 165pt;
