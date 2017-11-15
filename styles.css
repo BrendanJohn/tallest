@@ -227,7 +227,7 @@
 @keyframes growMillenium {
     0% {
         height: 100pt;
-        filter: blur(3px)
+        filter: blur(3px);
         filter: opacity(30%);
     }
     10% {
