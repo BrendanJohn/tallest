@@ -13,7 +13,7 @@
 #landscape {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 85px;
     height: 500px;
     border-bottom: 1px solid #eee;
 }
