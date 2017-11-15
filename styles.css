@@ -24,9 +24,73 @@
     height: 100%;
     margin-left: 80px;
 }
+/*buildings*/
 .building {
     position: absolute;
     bottom: 100px;
+    transition: height 2s;
+}
+#landscape .building:hover {
+    height: 272px;
+}
+#landscape .building:hover> .window 
+{ background-color: yellow; 
+}
+.top {
+    border-left: 3px solid lightblue;
+    height: 19px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    display: inline-block;
+    top: -18px;
+}
+.topLeft {
+    width: 35px;
+    height: 20px;
+    background: white;
+    display: inline-block;
+    float: left;
+}
+.topRight {
+    width: 35px;
+    height: 20px;
+    background: white;
+    display: inline-block;
+    float: right;
+}
+.window {
+    width: 14px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 6px;
+    animation: windows 5s;
+    background: cornflowerblue;
+}
+@keyframes windows {
+    0% {
+        background: 0;
+    }
+    20% {
+        background: 0;
+    }
+    75% {
+        background: cornflowerblue;
+        transform: rotate(180deg);
+    }
+    100% {
+        background: cornflowerblue;
+        transform: rotate(180deg);
+        transition-duration: 3s;
+    }
+}
+.windowBlank {
+    width: 14px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 6px;
 }
 .name {
     position: absolute;
@@ -37,7 +101,6 @@
     font-size: 16px;
     transform: translate(3px, 3px);
 }
-/*buildings*/
 
 #hancock {
     background-color: lightblue;
@@ -127,7 +190,7 @@
     }
     50% {
         height: 165pt;
-        width: 96%;
+        width: 96%; 
         filter: opacity(60%);
     }
     60% {
@@ -207,53 +270,6 @@
         height: 209pt;
         width: 100%;
     }
-}
-.topLeft {
-    width: 30px;
-    height: 20px;
-    background: white;
-    display: block;
-    float: left;
-}
-.topRight {
-    width: 30px;
-    height: 20px;
-    background: white;
-    display: block;
-    float: right;
-}
-.window {
-    width: 14px;
-    height: 30px;
-    display: inline-block;
-    margin-left: 7px;
-    margin-top: 6px;
-    animation: windows 5s;
-    background: cornflowerblue;
-}
-@keyframes windows {
-    0% {
-        background: 0;
-    }
-    20% {
-        background: 0;
-    }
-    75% {
-        background: cornflowerblue;
-        transform: rotate(180deg);
-    }
-    100% {
-        background: cornflowerblue;
-        transform: rotate(180deg);
-        transition-duration: 3s;
-    }
-}
-.windowBlank {
-    width: 14px;
-    height: 30px;
-    display: inline-block;
-    margin-left: 7px;
-    margin-top: 6px;
 }
 svg:hover #prudential { 
   fill:darkseagreen;
